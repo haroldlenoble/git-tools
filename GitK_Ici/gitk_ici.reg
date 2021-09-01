@@ -1,0 +1,33 @@
+Windows Registry Editor Version 5.00
+
+; Open files
+; Default Git-Bash Location C:\Program Files\Git\git-bash.exe
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\gitk]
+@="GitK pour lui"
+"Icon"="C:\\Users\\#MON_USER#\\AppData\\Local\\Programs\\Git\\git-bash.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\*\shell\gitk\command]
+@="\"C:\\Users\\#MON_USER#\\AppData\\Local\\Programs\\Git\\cmd\\gitk.exe\" %1"
+
+
+; This will make it appear when you right click ON a folder
+; The "Icon" line can be removed if you don't want the icon to appear
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\gitk]
+@="GitK ici"
+"Icon"="C:\\Users\\#MON_USER#\\AppData\\Local\\Programs\\Git\\git-bash.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\gitk\command]
+@="cmd.exe /c \"cd %1 && C:\\Users\\#MON_USER#\\AppData\\Local\\Programs\\Git\\cmd\\gitk.exe\""
+
+
+; This will make it appear when you right click INSIDE a folder
+; The "Icon" line can be removed if you don't want the icon to appear
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\gitk]
+@="GitK Ici"
+"Icon"="C:\\Users\\#MON_USER#\\AppData\\Local\\Programs\\Git\\git-bash.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\gitk\command]
+@="\"C:\\Users\\#MON_USER#\\AppData\\Local\\Programs\\Git\\cmd\\gitk.exe\""

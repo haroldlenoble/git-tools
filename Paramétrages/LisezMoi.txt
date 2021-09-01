@@ -1,0 +1,12 @@
+Pour paramétrer un outil pour la commande difftool et mergetool, exécutez le script correspondant à votre outil 
+(e.g. pour utiliser meld avec difftoll, on exécute difftool_meld.sh).
+On peut exécuter le script par double-click depuis l'explorateur de fichiers, ou bien en tapant son nom dans la console bash.
+
+Pour supprimer la configuration réalisée avec le script, on exécute le script unset correspondant
+(e.g pour annuler les effets du script difftool_meld.sh, on exécutera le script difftool_meld_unset.sh)
+
+Il y a 2 scripts pour WinMerge (probablement l'outil le plus communément utilisé dans l'équipe) pour correspondre aux 2 répertoires 
+dans lequel peut être installé WinMerge :
+ - scripts "winmerge" pour répertoire : C:\Program Files\WinMerge
+ - scripts "winmergex86" pour répertoire : C:\Program Files (x86)\WinMerge
+A noter qu'il n'y a qu'un script unset qui fonctionne dans les 2 cas.
